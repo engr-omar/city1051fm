@@ -1,4 +1,4 @@
-import 'package:city105fm/splash_screen.dart';
+import 'package:city1051fm/src/splashscreen/views/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,15 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'City 105.1',
-      debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: Colors.black,
-        colorScheme: const ColorScheme.dark(
-          primary: Colors.orange,
-          secondary: Colors.orangeAccent,
-        ),
-      ),
+      title: 'City 105.5 FM',
+      theme: ThemeData(primarySwatch: Colors.orange),
+      debugShowCheckedModeBanner: true,
       home: const SplashScreen(),
     );
   }
